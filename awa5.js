@@ -129,13 +129,9 @@ function runCode() {
   //Convert from Awatalk
   commandsList = ReadAwaTalk(codeStr);
 
-  //debug text
-  var testString = "";
-  commandsList.forEach(function(elem, idx) {
-    testString += elem + " ";
-  });
+  //Clear the output
   var title = document.getElementById('outputField');
-  title.value = testString;
+  title.value = "";
 
 
 
