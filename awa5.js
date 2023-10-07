@@ -515,6 +515,7 @@ async function waitInput() {
   var inpWait;
   let myPromise = new Promise(function(resolve) {
     document.getElementById('inputBtn').disabled = false;
+    document.getElementById('inputField').disabled = false;
     document.getElementById('inputBtn').addEventListener("click", inpWait = function() {
       resolve(document.getElementById('inputField').value);
     });
@@ -523,6 +524,7 @@ async function waitInput() {
 
   document.getElementById('inputBtn').removeEventListener("click", inpWait);
   document.getElementById('inputBtn').disabled = true;
+  document.getElementById('inputField').disabled = true;
 
   return s;
 }
