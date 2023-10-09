@@ -153,7 +153,7 @@ async function codeLoop() {
   lblTable = { };
   var commandsCount = 0;
   for (i = 0; i < commandsList.length; i++) {
-  	commandsCount++;
+    commandsCount++;
     switch (commandsList[i]) {
       case awatisms.lbl:
         //Main case to catch, store in table
@@ -219,9 +219,9 @@ async function codeLoop() {
         i++;
         var bubble = bubbleAbyss.pop();
         if(commandsList[i] == 0) {
-        	bubbleAbyss.unshift(bubble);
+          bubbleAbyss.unshift(bubble);
         } else {
-        	bubbleAbyss.splice(bubbleAbyss.length - commandsList[i], 0, bubble);
+          bubbleAbyss.splice(bubbleAbyss.length - commandsList[i], 0, bubble);
         }
         break;
 
@@ -253,7 +253,7 @@ async function codeLoop() {
 
         var b1IsDouble = isDouble(bubble1);
         var b2IsDouble = isDouble(bubble2);
-				
+        
         if (!b1IsDouble && !b2IsDouble) {
         
           var newBubble = [];
@@ -328,7 +328,19 @@ async function codeLoop() {
           bubbleAbyss[bubbleAbyss.length - 1] == bubbleAbyss[bubbleAbyss.length - 2]) {
           //True, execute next line
         } else {
-          i++; //skip next line
+          let nextCommand = commandsList[i + 1];
+          switch (nextCommand) {
+            case awatisms.lbl:
+            case awatisms.blo:
+            case awatisms.sbm:
+            case awatisms.srn:
+            case awatisms.jmp:
+              i += 2;
+              break;
+            default:
+              i++;
+              break;
+          }
         }
         break;
 
@@ -338,7 +350,19 @@ async function codeLoop() {
           bubbleAbyss[bubbleAbyss.length - 1] < bubbleAbyss[bubbleAbyss.length - 2]) {
           //True, execute next line
         } else {
-          i++; //skip next line
+          let nextCommand = commandsList[i + 1];
+          switch (nextCommand) {
+            case awatisms.lbl:
+            case awatisms.blo:
+            case awatisms.sbm:
+            case awatisms.srn:
+            case awatisms.jmp:
+              i += 2;
+              break;
+            default:
+              i++;
+              break;
+          }
         }
         break;
 
@@ -348,7 +372,19 @@ async function codeLoop() {
           bubbleAbyss[bubbleAbyss.length - 1] > bubbleAbyss[bubbleAbyss.length - 2]) {
           //True, execute next line
         } else {
-          i++; //skip next line
+          let nextCommand = commandsList[i + 1];
+          switch (nextCommand) {
+            case awatisms.lbl:
+            case awatisms.blo:
+            case awatisms.sbm:
+            case awatisms.srn:
+            case awatisms.jmp:
+              i += 2;
+              break;
+            default:
+              i++;
+              break;
+          }
         }
         break;
 
@@ -359,7 +395,7 @@ async function codeLoop() {
 
     //Next command
     if(commandsList[i] != awatisms.lbl)
-    	commandTime++;
+      commandTime++;
     i++;
   }
 
