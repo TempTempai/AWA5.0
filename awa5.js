@@ -54,14 +54,14 @@ function ReadAwaTalk(awaBlock) {
     if (cleanedAwas.substr(awaIndex, 2) == "wa") {
 
       //Set the newValue to all 0b1's if it's a signed negative number
-      if (bitCounter == 0 && signed)
+      if (bitCounter == 0 && signed) {
         newValue = -1;
-      else {
-        bitCounter++;
+      } else {
         newValue <<= 1;
         newValue += 1;
-        awaIndex += 2;
       }
+      awaIndex += 2;
+      bitCounter++;
     } else if (awaIndex < cleanedAwas.length - 3 && cleanedAwas.substr(awaIndex, 4) == " awa") {
       bitCounter++;
       newValue <<= 1;
