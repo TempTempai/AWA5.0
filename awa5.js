@@ -227,8 +227,10 @@ async function codeLoop() {
 
       case awatisms.pop: //!
         var bubble = bubbleAbyss.pop();
-        while (bubble.length > 0) {
-          bubbleAbyss.push(bubble.shift());
+        if(isDouble(bubble)) {
+          while (bubble.length > 0) {
+            bubbleAbyss.push(bubble.shift());
+          }
         }
         break;
 
