@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "type": "module",
+
+  "scripts" : {
+    "local" : "http-server Website"
+  },
+
+  "devDependencies": {
+    "bun-types": "^1.0.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
