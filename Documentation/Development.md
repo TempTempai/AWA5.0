@@ -7,7 +7,9 @@ How to setup your local environment for **Awatalk**.
 
 ## Setup
 
--   Install **[Bun]** or **[Node]**
+<br>
+
+-   Install **[Bun]**
 
     <br>
 
@@ -15,7 +17,7 @@ How to setup your local environment for **Awatalk**.
 
     -   #### GitHub Desktop
 
-        [<kbd> <br> Linux <br> </kbd>][GitHub Desktop Linux]   [<kbd> <br> Windows / MacOS <br> </kbd>][GitHub Desktop Linux]
+        [<kbd> <br> Linux <br> </kbd>][GitHub Desktop Linux] [<kbd> <br> Windows / MacOS <br> </kbd>][GitHub Desktop Linux]
 
         <br>
 
@@ -27,10 +29,10 @@ How to setup your local environment for **Awatalk**.
 
     <br>
 
--   Install the dependencies
+-   Install the dependencies with:
 
     ```sh
-    <npm/bun> install
+    bun install
     ```
 
 <br>
@@ -45,7 +47,7 @@ How to setup your local environment for **Awatalk**.
 Start the localhost HTTP server with:
 
 ```
-<npm/bun> run local
+bun run local
 ```
 
 <br>
@@ -55,7 +57,7 @@ Start the localhost HTTP server with:
 Build the AWA interpreter code with:
 
 ```
-<npm/bun> run dev
+bun run dev
 ```
 
 <br>
@@ -64,5 +66,4 @@ Build the AWA interpreter code with:
 
 [GitHub Desktop Linux]: https://github.com/shiftkey/desktop
 [GitHub Desktop Other]: https://desktop.github.com/
-[Node]: https://nodejs.org/en/download
 [Bun]: https://bun.sh/docs/installation
