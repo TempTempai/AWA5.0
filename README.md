@@ -13,6 +13,8 @@
 <br>
 
 [![Button Website]][Website]  
+[![Button Tutorial]][Tutorial]
+
 [![Button Specification]][Specification]  
 [![Button Development]][Development]
 
@@ -33,5 +35,8 @@
 [Button Development]: https://img.shields.io/badge/Development-007ACC?style=for-the-badge&logoColor=white&logo=VisualStudioCode
 [Development]: Documentation/Development.md
 
-[Button Website]: https://img.shields.io/badge/Website-cb6a70?style=for-the-badge&logoColor=white&logo=ElasticStack
+[Button Website]: https://img.shields.io/badge/Website-b19d2f?style=for-the-badge&logoColor=white&logo=ElasticStack
 [Website]: https://temptempai.github.io/AWA5.0/
+
+[Button Tutorial]: https://img.shields.io/badge/Tutorial-b92319?style=for-the-badge&logoColor=white&logo=YouTube
+[Tutorial]: https://www.youtube.com/watch?v=DY70AcaXq40
