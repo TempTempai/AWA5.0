@@ -3,7 +3,8 @@
   "type": "module",
 
   "scripts" : {
-    "local" : "http-server Website"
+    "local" : "http-server Website" ,
+    "dev" : "bash .github/Tasks/Dev.sh"
   },
 
   "devDependencies": {
