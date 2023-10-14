@@ -1,0 +1,18 @@
+{
+    "short_name" : "AWA" ,
+    "name" : "AWA Online Interpreter" ,
+    
+    "background_color" : "#add7e4" ,
+    "theme_color" : "#cce8f6" ,
+    "display" : "standalone" ,
+    
+    "icons" : [{
+        "sizes" : "192x192" ,
+        "type" : "image/png" ,
+        "src" : "Media/Favicon/Android-192.png"
+    },{
+        "sizes" : "512x512" ,
+        "type" : "image/png" ,
+        "src" : "Media/Favicon/Android-512.png"
+    }]
+}

@@ -1,0 +1,58 @@
+
+name : Deploy AWA Website
+
+on:
+    workflow_dispatch:
+
+    push:
+
+        branches:
+
+            -   main
+
+        paths:
+
+            -   'Website/**'
+
+
+permissions:
+
+    contents : read
+    id-token : write
+    pages : write
+
+
+concurrency:
+
+    cancel-in-progress : false
+    group : Website
+
+
+jobs:
+
+    deploy:
+
+        runs-on : ubuntu-latest
+
+        environment:
+
+            name : github-pages
+            url : ${{ steps.deployment.outputs.page_url }}
+
+        steps:
+
+            -   name : Checkout Repository
+                uses : actions/checkout@v4.1.0
+
+            -   name : Setup Pages
+                uses : actions/configure-pages@v3
+
+            -   name : Upload artifact
+                uses : actions/upload-pages-artifact@v2
+                with :
+
+                    path: 'Website'
+
+            -   name : Deploy to GitHub Pages
+                uses : actions/deploy-pages@v2
+                id : deployment

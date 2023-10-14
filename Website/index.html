@@ -1,0 +1,156 @@
+<html>
+    <head>
+
+        <title> Minimal AWA 5.0 Interpreter </title>
+
+        <link
+            href = Style/Base.css
+            rel = stylesheet
+            type = text/css
+        >
+
+        <link
+            sizes = 180x180
+            href = Media/Favicon/Apple.png
+            rel = apple-touch-icon
+        >
+
+        <link
+            sizes = 32x32
+            href = Media/Favicon/32.png
+            type = image/png
+            rel = icon
+        >
+
+        <link
+            sizes = 16x16
+            href = Media/Favicon/16.png
+            type = image/png
+            rel = icon
+        >
+
+        <link
+            href = site.webmanifest
+            rel = manifest
+        >
+
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+
+                        <h1> Minimal AWA5.0 Interpreter </h1>
+
+                        <h2> Barely Functional 💪 </h2>
+
+                        <script src = Scripts/AWA-5.0.js ></script>
+
+                        <h3> Input </h3>
+
+                        <textarea
+
+                        spellcheck = false
+                            disabled = true
+                            name = text
+                            cols = 20
+                            rows = 5
+                            id = inputField
+
+                        ></textarea>
+
+                        <input
+                            disabled = true
+                            value = Input
+                            type = submit
+                            id = inputBtn
+                        >
+
+                        <br>
+
+                        <h3> Code </h3>
+
+                        <textarea
+
+                            placeholder = 'Awa...'
+                            spellcheck = false
+                            name = text
+                            cols = 60
+                            rows = 5
+                            id = codeField
+
+                        ></textarea>
+
+                        <input
+                            onclick = 'runCode()'
+                            value = Run
+                            type = submit
+                            id = runBtn
+                        >
+
+                        <input
+                            disabled = true
+                            onclick = 'stopRunning()'
+                            hidden = true
+                            value = Stop
+                            type = submit
+                            id = stopBtn
+                        >
+
+                        <br>
+
+                        <input
+                            onclick = 'testCode()'
+                            hidden = true
+                            value = Test
+                            type = submit
+                            id = testBtn
+                        >
+
+                        <br>
+
+                        <h3> Output </h3>
+
+                        <textarea
+
+                            spellcheck = false
+                            name = text
+                            cols = 80
+                            rows = 5
+                            id = outputField
+
+                        ></textarea>
+
+                        <br>
+
+                        <input
+                            disabled = true
+                            type = text
+                            id = info
+                        >
+
+                    </td>
+
+                    <td rowspan = 2 >
+
+                        <img
+                            class = Logo
+                            src = 'Media/Jelly AWA.png'
+                            alt = 'AWA5.0 Logo'
+                        >
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class = Footer >
+                        <div> ©Temptonics LLLTD 1968 </div>
+                        <div> Awa5.0 Logo by Sena Bonbon </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+</html>
